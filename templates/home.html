@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row align-items-center">
+    <div class="col-lg-7">
+        <h1 class="display-5 fw-bold">Manage your library with ease</h1>
+        <p class="lead text-muted">Track books, members, and issued items through a simple and clean Django web app.</p>
+        <a href="{% url 'register' %}" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+    <div class="col-lg-5">
+        <div class="card p-4">
+            <h3>Why use this system?</h3>
+            <ul>
+                <li>Simple book and member management</li>
+                <li>Issue and return tracking</li>
+                <li>Secure login and profile management</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
